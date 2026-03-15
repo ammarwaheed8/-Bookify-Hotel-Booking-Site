@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="book-now.css">
+    <title>Book Now! - Bookify</title>
+</head>
+<body>
+    <section id="section-1">
+        <!-- Desktop Navbar -->
+        <nav>
+            <img src="img/logo.png" alt="logo" id="logo">
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="book-now.html" class="active">Booking</a></li>
+            </ul>
+            <a href="#" id="booking-btn">Book Now!</a>
+        </nav>
+        <!-- Mobile Navbar -->
+        <div class="mobile-navbar">
+          <img src="img/logo.png" alt="mini-logo" id="mini-logo">
+          <!-- Hidden Checkbox to Control Menu -->
+          <input type="checkbox" id="burger-toggle">
+          <!-- Burger Icon -->
+          <label for="burger-toggle" class="burger-container">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+          </label>
+          <!-- Navigation Menu -->
+          <div class="nav-menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="book-now.html">Booking</a></li>
+            </ul>
+          </div>
+         </div>
+    </section>
+    <section id="section-2">
+      <div class="booking-container">
+        <h1>Book A Hotel Now!</h1>
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="13be1861-3e17-4ad3-a3ea-28f39580aa7e">
+
+          <!-- Name Section -->
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+          </div>
+    
+          <!-- Contact Information -->
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+          </div>
+    
+          <!-- Hotel Selection -->
+          <div class="form-group">
+            <label for="hotel">Select Hotel</label>
+            <select id="hotel" name="hotel" required>
+              <option value="The-Nishat-Hotel-Johar-Town">The Nishat Hotel Johar Town</option>
+              <option value="The-Nishat-Hotel-Gulberg">The Nishat Hotel Gulberg</option>
+              <option value="PC-Hotel-Lahore">PC Hotel Lahore</option>
+              <option value="Avari-Hotel-Lahore">Avari Hotel Lahore</option>
+              <option value="Avari-Express-Lahore">Avari Express Lahore</option>
+              <option value="Royal-Swiss-Lahore">Royal Swiss Lahore</option>
+              <option value="Ramada-Hotel-Lahore">Ramada Hotel Lahore</option>
+              <option value="Luxus-Grand-Lahore">Luxus Grand Lahore</option>
+              <option value="Nine-Tree-Luxury">Nine Tree Luxury</option>
+              <option value="Falettis-Hotel-Main">Falettis Hotel Main</option>
+              <option value="Falettis-Express-Shimla-Hill">Falettis Express Shimla Hill</option>
+            </select>
+          </div>
+    
+          <!-- Dates -->
+          <div class="form-group">
+            <label for="checkin">Check-in Date</label>
+            <input type="date" id="checkin" name="checkin" required>
+          </div>
+          <div class="form-group">
+            <label for="checkout">Check-out Date</label>
+            <input type="date" id="checkout" name="checkout" required>
+          </div>
+    
+          <!-- Guests -->
+          <div class="form-group">
+            <label for="adults">Number of Adults</label>
+            <select id="adults" name="adults" required>
+              <option value="1">1 Adult</option>
+              <option value="2">2 Adults</option>
+              <option value="3">3 Adults</option>
+              <option value="4">4 Adults</option>
+              <option value="5+">5+ Adults</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="children">Number of Children</label>
+            <select id="children" name="children" required>
+              <option value="0">0 Children</option>
+              <option value="1">1 Child</option>
+              <option value="2">2 Children</option>
+              <option value="3">3 Children</option>
+              <option value="4+">4+ Children</option>
+            </select>
+          </div>
+    
+          <!-- Room Type -->
+          <div class="form-group">
+            <label for="room">Room Type</label>
+            <select id="room" name="room" required>
+              <option value="Deluxe">Deluxe</option>
+              <option value="Executive">Executive</option>
+              <option value="Platinum">Platinum</option>
+              <option value="3-Beds-Room">3 Beds Room</option>
+              <option value="Royal-Suite">Royal Suite</option>
+              <option value="Business-Suite">Business Suite</option>
+            </select>
+          </div>
+    
+          <!-- Submit -->
+          <div class="form-group">
+            <button type="submit">Book Now</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section id="section-3">
+      <div class="sec-3-container">
+        <h1>Reach Us!</h1><br>
+        <p>Planning your next stay or have questions about your booking? We’re here to make your travel experience seamless and enjoyable. Contact us anytime – your perfect getaway starts with us!</p><br><br>
+        <div class="contact-method">
+        <i class="fa-solid fa-envelope"></i><a href="mailto:reservation@bookify.com.pk?subject=Room Reservation at Hotel ">reservation@bookify.com.pk</a>
+        </div><br>
+        <div class="contact-method">
+        <i class="fa-solid fa-phone"></i><a href="tel:+923001516479">+92 300 1516479</a>
+        </div><br>
+        <div class="contact-method">
+        <i class="fa-solid fa-phone"></i><a href="tel:+923001516679">+92 300 1516679</a>
+        </div><br>
+      </div>
+    </section>
+    <Footer>
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="book-now.html">Book Now</a></li>
+        </ul>
+        <p>&copy;2024 Bookify.com | All Rights Reserved</p>
+      </Footer>
+      <div id="my-branding">Developed by <a href="https://ammarwaheed.vercel.app/" target="_blank">Ammar Waheed</a></div>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="book-now.js"></script>
+</body>
+</html>
