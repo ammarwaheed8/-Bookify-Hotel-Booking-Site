@@ -1,0 +1,732 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+*:not(:hover) {transition: all 0.4s ease-in-out 0.1ms;}
+
+.main-heading {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    color: #2f2620;
+}
+
+.main-para {
+    width: 85%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: center;
+    margin: 0 0 35px 0;
+    color: #898989;
+}
+
+/* My branding style */
+#my-branding {
+    color: rgb(255 255 255);
+    font-size: 15px;
+    font-weight: 300;
+    padding: 6px;
+    text-align: center;
+    background-color: #3b3b3d;
+}
+
+#my-branding a {
+    text-decoration: none;
+    color: rgb(0, 115, 255);
+    font-weight: 500;
+}
+
+#my-branding a:hover {
+    color: rgb(112, 175, 252);
+    transition: all 0.4s ease-in-out 0.1ms;
+}
+
+
+/* ----- Section-1 CSS Styling ----- */
+#section-1 {
+    color: white;
+    width: 100%;
+    height: fit-content;
+    padding: 40px 80px 80px 80px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/bg-5.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.mobile-navbar {display: none;}
+
+nav {
+    width: 100%;
+    padding: 6px 23px;
+    border-radius: 50px;
+    margin: 0 0 60px 0;
+    height: fit-content;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+#logo {
+    width: 100px;
+    height: fit-content;
+}
+
+#navbar {
+    width: fit-content;
+    height: fit-content;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 1px 20px;
+}
+
+#navbar li a {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(79, 79, 79);
+}
+
+.active {color: #b24800 !important;}
+
+#navbar li a:hover {
+    color: #b24800;
+    transition: all 0.4s ease-in-out 0.1ms;
+}
+
+.sec-1-heading {
+    letter-spacing: 2px;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    padding: 0 0 0 40px;
+    color: #ffffff;
+}
+
+.sec-1-paragraph {
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 0 0 0 40px;
+}
+
+#booking-btn {
+    width: 170px;
+    height: 55px;
+    border-radius: 455px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 0 0 0 40px;
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    color: #ffffff;
+    background-color: #3586ff;
+}
+
+#booking-btn:hover {
+    color: #3586ff;
+    border: 2px solid #3586ff;
+    background-color: #ffffff;
+    transition: all 0.4s ease-in-out 0.1ms;
+}
+
+/* content slider for section-1 */
+.content-slider {
+    width: 800px;
+    height: 420px;
+    margin: 0 0 25px 40px;
+    overflow: hidden;
+    position: relative;
+}
+.content-slider .slider-container {
+    position: absolute;
+    width: 300%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    animation: slider 24s infinite;
+}
+.content-slider .slider-container .slide {
+    position: relative;
+    width: 33.33333333%;
+    height: 100%;
+    float: left;
+    overflow: hidden
+}
+.content-slider .slider-container .slide img {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+@keyframes slider {
+    0%, 25%, 100%{left: 0}
+      
+    30%, 55%{left: -100%}
+      
+    60%, 85%{left: -200%}
+}
+
+
+/* ----- Section-2 CSS Styling ----- */
+#section-2 {
+    width: 100%;
+    height: fit-content;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-2-container {
+    width: 100%;
+    height: fit-content;
+    padding: 60px;
+    gap: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hotel {
+    border: 1px solid rgb(209 209 209 / 53%);
+    width: fit-content;
+    height: 405px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.visible-details {
+    min-width: 272px;
+    min-height: 385px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hotel-img {
+    text-decoration: none;
+}
+
+.hotel-img img {
+    width: 326px;
+    height: 215px;
+    border-radius: 10px;
+    margin: 0 0 15px 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hotel-name {
+    margin: 0 0 10px 0;
+    font-size: 20px !important;
+}
+
+.hotel-price {
+    margin: 0 0 10px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 6px;
+}
+
+.hotel-price p {
+    margin: 0 !important;
+}
+
+.hotel-details {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 5px;
+}
+
+.hotel-details a {text-decoration: none;}
+
+.hotel-details p {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    color: #898989;
+}
+
+.hotel-details p i {
+    margin: 0 4px 0 0 !important;
+    font-size: 12px !important;
+}
+
+
+.hotel-details h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3b3b3d;
+}
+
+.hotel-details i {
+    font-size: 15px;
+}
+
+.hotel-book-btn {
+    width: 105px;
+    height: 28px;
+    border-radius: 455px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    color: #ffffff;
+    background-color: #3586ff;    
+}
+
+.hotel-book-btn:hover {
+    color: #3586ff;
+    border: 2px solid #3586ff;
+    background-color: #ffffff;
+    transition: all 0.4s ease-in-out 0.1ms;
+}
+
+.extension-btn {
+    font-size: 14px;
+    font-weight: 400;
+    color: #595959;
+    font-style: italic;
+    margin: 10px 0 0 0;
+}
+
+.hotel:hover {
+    height: 1000px;
+    transition: all 0.4s ease-in-out 0.1ms;
+}
+
+.hotel:hover .room-details {
+    opacity: 1;
+    transition: all 0.4s ease-in-out 0.1ms;
+}
+
+.room-details {
+    padding: 5px;
+    gap: 10px;
+    margin: 15px 0 0 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.room {
+    border: 1px solid rgb(206, 206, 206);
+    padding: 8px 15px;
+    margin: 0 0 5px 0;
+    border-radius: 8px;
+}
+
+.room h3 {
+    font: 15px;
+    font-weight: 600;
+    color: #3b3b3d;
+}
+
+.room h5 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #898989;
+}
+
+
+/* ----- Section-3 CSS Styling ----- */
+#section-3 {
+    width: 100%;
+    height: fit-content;
+    padding: 60px 60px 90px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-3-container {
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-3-child {
+    width: 310px;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.sec-3-child img {
+    width: 200px;
+    height: 200px;
+    margin: 0 0 5px 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sec-3-child h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    color: #2f2620;
+}
+
+.sec-3-child p {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 35px 0;
+    color: #898989;
+}
+
+
+/* ----- Footer CSS Styling ----- */
+Footer {
+    width: 100%;
+    height: 60vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f2620;
+
+    background: #3586ff;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.social-icon, .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+  
+.social-icon__item, .menu__item {
+    list-style: none;
+}
+  
+.social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.social-icon__link:hover {
+    transform: translateY(-10px);
+}
+  
+.menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+  
+.menu__link:hover {
+    opacity: 1;
+}
+  
+.footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* -------------- Media Queries -------------- */
+@media screen and (max-width: 991px) {
+/* ----- Section-1 CSS Styling ----- */
+#section-1 {padding: 40px;}
+
+nav {display: none;}
+
+/* --- mobile navbar menu --- */
+.mobile-navbar {
+    display: flex;
+    padding: 5px 20px;
+    border-radius: 80px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+#mini-logo {
+    width: 70px;
+}
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #b34a03;
+    --background-color: #ecf0f1;
+    --text-color: #333;
+    --hover-color: #db6c22;
+  }
+
+  
+  /* Responsive Adjustments */
+  @media (min-width: 768px) {
+    .nav-menu {
+      width: 750px;
+    }
+  }
+  /*Medium Screens */
+  @media (min-width: 922px) {
+    .nav-menu {
+      width: 970px;
+    }
+  }
+  /*Large Screens */
+  @media (min-width: 1200px) {
+    .nav-menu {
+      width: 1170px;
+    }
+  }
+  
+  /* Burger Icon Container */
+  .burger-container {
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 5px;
+    background: hwb(0 100% 0% / 0.1);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Burger Icon Lines */
+  .burger-line {
+    width: 100%;
+    height: 3px;
+    background-color: #b34a03;
+    border-radius: 2px;
+    transform-origin: center;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* Checkbox Hack */
+  #burger-toggle {
+    display: none;
+  }
+  
+  /* Navigation Styles */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background: #ffffff;
+    transition: right 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
+    box-shadow: -4px 0 15px #00000033;
+    overflow-y: auto;
+    padding-top: 100px;
+    z-index: 66;
+  }
+  
+  .nav-menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    backdrop-filter: blur(10px);
+  }
+  
+  .nav-menu ul {
+    list-style-type: none;
+  }
+  
+  .nav-menu ul li {
+    margin: 0 15px;
+    border-bottom: 1px solid #ffffff1a;
+  }
+  
+  .nav-menu ul li a {
+    color: #b34a03;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .nav-menu ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: left 0.3s ease;
+  }
+  
+  .nav-menu ul li a:hover::after {
+    left: 0;
+  }
+  
+  /* Burger Icon Animation on Checkbox Checked */
+  #burger-toggle:checked ~ .burger-container .burger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  #burger-toggle:checked ~ .burger-container .burger-line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #burger-toggle:checked ~ .burger-container .burger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* Navigation Slide In */
+  #burger-toggle:checked ~ .nav-menu {
+    right: 0;
+  }
+  
+
+.content-slider {
+    width: 100%;
+    height: 430px;
+    margin: 40px auto;
+}
+
+.sec-1-heading {
+    font-size: 50px;
+    margin: 0 0 15px 0;
+    padding: 0 0 0 25px;
+}
+
+.sec-1-paragraph {
+    font-size: 20px;
+    padding: 0 0 0 25px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+/* ----- Section-1 CSS Styling ----- */
+.content-slider {height: 410px;}
+    
+.sec-1-heading {font-size: 37px;}
+    
+.sec-1-paragraph {font-size: 17px;}
+
+/* ----- Section-2 CSS Styling ----- */
+.sec-2-container {
+    padding: 15px;
+    gap: 40px;
+}
+
+.hotel-img img {width: 303px;}
+
+}
+
+@media screen and (max-width: 576px) {
+/* ----- Section-1 CSS Styling ----- */
+.content-slider {
+    height: 500px;
+}
+
+.sec-1-heading {font-size: 33px;}
+
+.sec-1-paragraph {font-size: 15px;}
+
+/* ----- Section-2 CSS Styling ----- */
+#section-2 {padding: 30px 0 0 0;}
+
+.hotel {
+    width: fit-content;
+    height: 380px;
+    padding: 10px;
+}
+
+.visible-details {
+    min-width: 272px;
+    min-height: 360px;
+}
+
+.hotel-img img {width: 303px;}
+
+/* ----- Section-3 CSS Styling ----- */
+#section-3 {padding: 60px 0px 180px 0px;}
+
+}
+
+@media screen and (max-width: 390px) {
+/* ----- Section-1 CSS Styling ----- */
+.content-slider {height: 690px;}
+
+/* ----- Section-2 CSS Styling ----- */
+.hotel-img img {
+    width: 282px;
+    height: 202px;
+}
+
+.main-heading {font-size: 35px;}
+
+.main-para {
+    font-size: 15px;
+    line-height: 32px;
+}
+
+}
