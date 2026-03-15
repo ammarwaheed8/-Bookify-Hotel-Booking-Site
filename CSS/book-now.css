@@ -57,7 +57,7 @@
     padding: 40px 80px 80px 80px;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/bg-2.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/bg-2.jpg');
     background-position: center;
     background-size: cover;
 }
