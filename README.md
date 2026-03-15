@@ -60,7 +60,7 @@ No build steps needed. Just open `index.html` in a browser:
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-usernam/bookify.git
+git clone https://github.com/ammarwaheed8/-Bookify-Hotel-Booking-Site.git
 
 # Open in browser
 open index.html
