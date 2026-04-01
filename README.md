@@ -14,6 +14,8 @@ Bookify is a front-end client project for a hotel booking firm. The client's req
 
 ```
 
+```
+
 ## 📁 Project Structure
 
 ```
